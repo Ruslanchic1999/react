@@ -12,19 +12,27 @@ import Friends from "./components/Friend/Friends";
 
 
 const App = (props) => {
+    debugger;
+
     return (
 
             <div className='app-wrapper'>
                 <Header/>
                 <Navbar/>
-                <div class='app-wrapper-content'>
+                <div className='app-wrapper-content'>
                     <Routes>
                         <Route path='/dialogs' element=
                             {<Dialogs dialogs={ props.state.dialogsPage.dialogs }
-                                      messages={ props.state.dialogsPage.messages }/>}/>
+                                      messages={ props.state.dialogsPage.messages}
+                                      addDialog={ props.addDialog }
+                                      addMessage={ props.addMessage }/>}
+                               newDialogText ={props.state.dialogsPage}
+                               newMessageText ={props.state.dialogsPage}/>
                         <Route path='/profile' element={<Profile
                             posts={ props.state.profilePage.posts }
-                        addPost={ props.addPost }/>}/>
+                            newPostText ={props.state.profilePage.newPostText}
+                            updateNewPostText ={props.updateNewPostText }
+                            addPost={ props.addPost }/>}/>
                         <Route path='/news' element={<News/>}/>
                         <Route path='/music' element={<Music/>}/>
                         <Route path='/setting' element={<Setting/>}/>
