@@ -22,9 +22,6 @@ const Dialogs = (props) => {
         props.addMessage ();
     }
 
-
-
-
     return (
         <div>
             <DialogItem/>
