@@ -4,54 +4,44 @@ import {NavLink} from "react-router-dom";
 import Post from "../Profile/MyPosts/Post/Post";
 import DialogItem from "./DialogItem";
 import Messages from "./Messages";
+import {sendMessageCreator, updateNewMessageBodyCreator} from "../../redux/dialogs_reducer";
 
 
 const Dialogs = (props) => {
-    let dialogsElements =
-        props.dialogs.map(d => < DialogItem name={d.name} id={d.id}/>);
+    let state = props.store.getState().dialogsPage
+    let dialogsElements = state.dialogs.map(d => < DialogItem name={d.name} id={d.id}/>);
+    let messagesElements = state.messages.map(m => < Messages message={m.message}/>);
+    let newMessageBody = state.newMessageBody;
 
-    let messagesElements =
-        props.messages.map(m => < Messages message={m.message}/>);
 
-    let newDialogElement = React.createRef();
-    let newMessagesElement = React.createRef();
-    let addDialog = () => {
-        props.addDialog ();
+    let onSendMessageClick = () => {
+        props.store.dispatch(sendMessageCreator())
     }
-    let addMessage = () => {
-        props.addMessage ();
+    let onNewMessageChange = (e) => {
+        let body = e.target.value
+        let action = updateNewMessageBodyCreator(body)
+        props.store.dispatch(action)
     }
-
     return (
         <div>
             <DialogItem/>
             <Messages/>
             <h3> My Dialogs </h3>
-            <div>
-                <div>
-                    <textarea  ref={newDialogElement} value={props.newDialogText}/>
-                </div>
-
-                <div>
-                    <button onClick={addDialog}>Add Dialog</button>
-                </div>
-
-            </div>
 
             <div className={s.dialogs}>
                 <div className={s.dialogItem}>
                     {dialogsElements}
                 </div>
                 <div className={s.messages}>
-
-                    {messagesElements}
+                    <div>{messagesElements}</div>
                     <div>
-                        <textarea ref={newMessagesElement} value={props.newMessageText}/>
+                        <div>
+                            <textarea onChange={onNewMessageChange} value={newMessageBody} placeholder={'Enter your message'}></textarea>
+                        </div>
+                        <div>
+                            <button onClick={ onSendMessageClick }>Send</button>
+                        </div>
                     </div>
-                    <div>
-                        <button onClick={addMessage}>Add Message</button>
-                    </div>
-
 
                 </div>
 
