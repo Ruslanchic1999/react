@@ -29,6 +29,10 @@ const Navbar = () => {
                     isActive ? s.active : undefined}>Setting</NavLink>
             </div>
             <div className={s.item}>
+                <NavLink to ='/users' className={({ isActive }) =>
+                    isActive ? s.active : undefined}>Users</NavLink>
+            </div>
+            <div className={s.item}>
                 <NavLink to ='/friends' className={({ isActive }) =>
                     isActive ? s.active : undefined}>Friends</NavLink>
             </div>

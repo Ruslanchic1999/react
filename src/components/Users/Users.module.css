@@ -1,0 +1,22 @@
+.container{
+    background-color: aqua;
+}
+
+.userPhoto{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.avatarka{
+
+}
+.status{
+
+}
+.location{
+
+}
+
+.selectedPage{
+    font-weight: bold;
+}
