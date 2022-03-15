@@ -1,5 +1,7 @@
 .descriptionBlock{
-    padding: 20px;
+    padding: 10px;
 }
-
+.bigPhoto img{
+    width: 600px;
+}
 

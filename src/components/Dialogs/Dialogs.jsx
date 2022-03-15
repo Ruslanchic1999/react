@@ -5,6 +5,7 @@ import Messages from "./Messages";
 
 
 
+
 const Dialogs = (props) => {
     let dialogsElements = props.dialogsPage.dialogs.map(d => < DialogItem name={d.name} key={d.key} id={d.id}/>);
     let messagesElements = props.dialogsPage.messages.map(m => < Messages message={m.message} key={m.key}/>);
@@ -16,9 +17,10 @@ const Dialogs = (props) => {
     }
     let onNewMessageChange = (e) => {
         let body = e.target.value
-        props.updateNewMessageBodyCreator(body)
+        props.updateNewMessageBody(body)
 
     }
+
     return (
         <div>
             <DialogItem/>

@@ -4,7 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="801e2640-1677-4133-b061-9e95d3b38bba" name="Changes" comment="git commit -m &quot;lesson 55&quot;" />
+    <list default="true" id="801e2640-1677-4133-b061-9e95d3b38bba" name="Changes" comment="git commit -m &quot;lesson 65&quot;">
+      <change afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Header/HeaderContainer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Preloader/Preloader.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/auth_reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/DialogsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/DialogsContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Friend/Friends.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Friend/Friends.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Friend/FriendsContainer.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPostsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPostsContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/ProfileInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/ProfileInfo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/ProfileInfo.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/ProfileInfo.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/Users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/Users.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/Users.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/Users.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/dialogs_reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/dialogs_reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/friends_reducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/profile_reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/profile_reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/redux-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redux-store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/store.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/users_reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/users_reducer.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,11 +87,15 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\react-kabzda-kak-prosto\react\src\redux" />
+      <recent name="C:\react-kabzda-kak-prosto\react\src\components\Header" />
+      <recent name="C:\react-kabzda-kak-prosto\react\src\components\Profile" />
+      <recent name="C:\react-kabzda-kak-prosto\react\src\components\Users" />
       <recent name="C:\react-kabzda-kak-prosto\react\react\src\redux" />
-      <recent name="C:\react-kabzda-kak-prosto\react\react\src\components\Friend" />
-      <recent name="C:\react-kabzda-kak-prosto\react\react\src\components\Users" />
-      <recent name="C:\react-kabzda-kak-prosto\01-first-progect\react-1\src\components\Dialogs" />
-      <recent name="C:\react-kabzda-kak-prosto\01-first-progect\react-1\src\components\Profile\MyPosts" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\react-kabzda-kak-prosto\react\src\components\Preloader" />
+      <recent name="C:\react-kabzda-kak-prosto\react\src\components" />
     </key>
   </component>
   <component name="RunManager">
@@ -101,6 +140,30 @@
       <workItem from="1645942965817" duration="3828000" />
       <workItem from="1645950977085" duration="1000" />
       <workItem from="1645955399180" duration="636000" />
+      <workItem from="1646282085832" duration="599000" />
+      <workItem from="1646311732779" duration="3266000" />
+      <workItem from="1646458330852" duration="1637000" />
+      <workItem from="1646465578538" duration="595000" />
+      <workItem from="1646492747531" duration="1123000" />
+      <workItem from="1646498281081" duration="4622000" />
+      <workItem from="1646814812448" duration="9881000" />
+      <workItem from="1646828965204" duration="840000" />
+      <workItem from="1646840009980" duration="824000" />
+      <workItem from="1646846137765" duration="1176000" />
+      <workItem from="1646849567124" duration="986000" />
+      <workItem from="1646897961097" duration="4395000" />
+      <workItem from="1646930742606" duration="2811000" />
+      <workItem from="1646974983806" duration="2644000" />
+      <workItem from="1647107614665" duration="21142000" />
+      <workItem from="1647149855165" duration="2759000" />
+      <workItem from="1647159745061" duration="3129000" />
+      <workItem from="1647249206062" duration="5227000" />
+      <workItem from="1647257571580" duration="1684000" />
+      <workItem from="1647268386843" duration="5061000" />
+      <workItem from="1647314835439" duration="4911000" />
+      <workItem from="1647336006920" duration="3483000" />
+      <workItem from="1647345261707" duration="1120000" />
+      <workItem from="1647365717911" duration="5917000" />
     </task>
     <servers />
   </component>
@@ -120,48 +183,25 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="git commit -m &quot;lesson 55&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="git commit -m &quot;lesson 55&quot;" />
+    <MESSAGE value="git commit -m &quot;lesson 58&quot;" />
+    <MESSAGE value="git commit -m &quot;lesson 65&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="git commit -m &quot;lesson 65&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/redux/store.js</url>
-          <line>44</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/redux/store.js</url>
-          <line>5</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/redux/store.js</url>
-          <line>51</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/redux/store.js</url>
-          <line>17</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/Profile/MyPosts/MyPostsContainer.jsx</url>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/components/Users/UsersContainer.jsx</url>
+          <url>file://$PROJECT_DIR$/src/redux/profile_reducer.js</url>
+          <line>5</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/redux/users_reducer.js</url>
-          <line>27</line>
+          <url>file://$PROJECT_DIR$/src/components/Header/HeaderContainer.jsx</url>
           <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/components/Users/Users.jsx</url>
-          <line>45</line>
-          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
