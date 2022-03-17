@@ -1,19 +1,16 @@
 import React from 'react';
 import Profile from "./Profile";
-import {addPost, setUserProfile, updateNewPostText} from "../../redux/profile_reducer";
+import {addPost, getUserProfile,  updateNewPostText} from "../../redux/profile_reducer";
 import {connect} from "react-redux";
-import { profileAPI} from "../../api/api";
+import {Redirect} from "react-router";
+
 
 
 
 class ProfileContainer extends React.Component {
 
     componentDidMount() {
-        profileAPI.getUserProfile()
-        .then(data => {
-            debugger;
-            this.props.setUserProfile(data);
-        });
+       this.props.getUserProfile()
     }
     render() {
         return (
@@ -32,6 +29,6 @@ let mapStateToProps = (state) => {
 
 }
 
-export default  connect (mapStateToProps, {addPost, updateNewPostText, setUserProfile})(ProfileContainer);
+export default  connect (mapStateToProps, {addPost, updateNewPostText, getUserProfile})(ProfileContainer);
 
 

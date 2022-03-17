@@ -1,3 +1,5 @@
+import {AuthMeAPI} from "../api/api";
+
 const SET_LOGIN_USER_DATA = 'SET_LOGIN_USER_DATA';
 const IS_TOGGLE_FETCHING = 'IS_TOGGLE_FETCHING';
 
@@ -6,7 +8,7 @@ let initialState = {
     login: null,
     email: null,
     isFetching: true,
-    isAuth: true
+    isAuth: false
 }
 const authReducer = (state = initialState, action) => {
 
@@ -31,5 +33,24 @@ const authReducer = (state = initialState, action) => {
 
 export const setLoginUserData = (id, login, email) => ({type: SET_LOGIN_USER_DATA, data: {id, login, email}})
 export const isToggleFetching = (isFetching) => ({type: IS_TOGGLE_FETCHING, isFetching})
+
+
+export const AuthMe = (id, login, email) => {
+
+    return (dispatch) => {
+        dispatch (isToggleFetching(true));
+        AuthMeAPI.getAuthMe()
+
+            .then(data => {
+
+                dispatch (isToggleFetching(false));
+                if (data.resultCode === 0) {
+                    let {id, login, email} = data.data;
+                   dispatch (setLoginUserData(id, login, email));
+                }
+            });
+    }
+}
+
 
 export default authReducer;
