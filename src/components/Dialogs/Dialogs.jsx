@@ -2,8 +2,11 @@ import React from 'react';
 import s from './Dialogs.module.css';
 import DialogItem from "./DialogItem";
 import Messages from "./Messages";
-import {Redirect} from "react-router";
-import {useNavigate} from "react-router-dom";
+import {Navigate} from "react-router-dom";
+import {withAuthRedirect} from "../../hoc/withAuthRedirect";
+import {compose} from "redux";
+import {connect} from "react-redux";
+import {addPost, getUserProfile, updateNewPostText} from "../../redux/profile_reducer";
 
 
 
@@ -25,6 +28,9 @@ const Dialogs = (props) => {
         props.updateNewMessageBody(body)
 
     }
+
+
+
 
 
     return (
@@ -55,4 +61,7 @@ const Dialogs = (props) => {
     )
 }
 
-export default Dialogs;
+
+export default compose(
+    withAuthRedirect
+)(Dialogs)

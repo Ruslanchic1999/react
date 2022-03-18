@@ -8,7 +8,10 @@ import {
 import {connect} from "react-redux";
 import Users from "./Users";
 import Preloader from "../Preloader/Preloader";
-import {Redirect} from "react-router";
+import {Navigate} from "react-router-dom";
+import {withAuthRedirect} from "../../hoc/withAuthRedirect";
+import {compose} from "redux";
+import {addPost, getUserProfile, updateNewPostText} from "../../redux/profile_reducer";
 
 
 class UsersContainer extends React.Component {
@@ -22,7 +25,6 @@ class UsersContainer extends React.Component {
     }
 
     render() {
-
         return (
             <>
                 <div>
@@ -35,6 +37,10 @@ class UsersContainer extends React.Component {
 }
 
 
+
+
+
+
 let mapStateToProps = (state) => {
     return (
         {
@@ -44,20 +50,24 @@ let mapStateToProps = (state) => {
             currentPage: state.usersPage.currentPage,
             isFetching: state.usersPage.isFetching,
             followingInProcess: state.usersPage.followingInProcess,
+            isAuth: state.auth.isAuth,
         }
     )
 
 }
 
+export default compose(
+    connect(mapStateToProps, {
+        follow,
+        unfollow,
+        setTotalCount,
+        setCurrentPage,
+        getUsers,
+        getUsersCurrentPage
 
-export default connect(mapStateToProps, {
-    follow,
-    unfollow,
-    setTotalCount,
-    setCurrentPage,
-    getUsers,
-    getUsersCurrentPage
+    }),
+    withAuthRedirect
+)(UsersContainer)
 
-})(UsersContainer);
 
 
