@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from "./Header";
 import {connect} from "react-redux";
-import {AuthMe} from "../../redux/auth_reducer";
+import {AuthMe,  Logout} from "../../redux/auth_reducer";
 import Preloader from "../Preloader/Preloader";
 
 
@@ -17,7 +17,7 @@ class HeaderContainer extends React.Component {
                 <div>
                     {this.props.isFetching ? <Preloader /> : null}
                 </div>
-            <Header {...this.props}/>
+            <Header {...this.props} login = {this.props.login} />
             </>
         );
     }
@@ -33,4 +33,4 @@ const mapStateToProps = (state) => {
 }
 
 
-export default connect(mapStateToProps, {AuthMe})(HeaderContainer);
+export default connect(mapStateToProps, {AuthMe,Logout})(Header);

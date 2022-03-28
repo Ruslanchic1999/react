@@ -1,9 +1,10 @@
-import React, {useEffect} from 'react';
-import {Navigate, useNavigate} from "react-router-dom";
+import React from 'react';
+import {Navigate} from "react-router-dom";
 import {connect} from "react-redux";
 
 
 let mapStateToPropsNavigate = (state) => {
+
     return (
         {isAuth: state.auth.isAuth}
     )
@@ -13,6 +14,7 @@ let mapStateToPropsNavigate = (state) => {
 export const  withAuthRedirect = (Component) => {
     class NavigateComponent extends React.Component {
         render(){
+
             if (!this.props.isAuth) return <Navigate to = '/login' />
             return <Component {...this.props} />
         }

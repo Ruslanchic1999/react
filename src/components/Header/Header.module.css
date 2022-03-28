@@ -8,8 +8,9 @@
 
 .loginBlock{
     float: left;
+
 }
 
 .loginBlock a{
-    color: yellow;
+    color: black;
 }

@@ -9,31 +9,38 @@ import DialogsContainer from "./components/Dialogs/DialogsContainer";
 import UsersContainer from "./components/Users/UsersContainer";
 import ProfileContainer from "./components/Profile/ProfileContainer";
 import HeaderContainer from "./components/Header/HeaderContainer";
-import Login from "./components/Login/login";
+import {ThemeProvider, theme} from "@chakra-ui/react";
+import FormikLoginContainer from "./components/Login/FormikLoginContainer";
 
 
 
 
-const App = (props) => {
+
+const App = () => {
 
     return (
             <div className='app-wrapper'>
                 <HeaderContainer />
                 <Navbar/>
-                <div className='app-wrapper-content'>
-                    <Routes>
-                        <Route path='/dialogs' element={<DialogsContainer />}/>
-                        <Route path='/profile' element={<ProfileContainer />}/>
-                        <Route path='/profile/:userId' element={<ProfileContainer />}/>
-                        <Route path='/news' element={<News/>}/>
-                        <Route path='/login' element={<Login />}/>
-                        <Route path='/music' element={<Music/>}/>
-                        <Route path='/setting' element={<Setting/>}/>
-                        <Route path='/users' element={<UsersContainer />}/>
+               <ThemeProvider theme ={theme}>
+                   <div className='app-wrapper-content'>
+                       <Routes>
+                           <Route path='/dialogs' element={<DialogsContainer />}/>
+                           <Route path='profile' element={<ProfileContainer />}>
+                               <Route path=':userId' element={<ProfileContainer />}/>
+                           </Route>
+
+                           <Route path='/news' element={<News/>}/>
+                           <Route path='/login' element={<FormikLoginContainer />}/>
+                           <Route path='/music' element={<Music/>}/>
+                           <Route path='/setting' element={<Setting/>}/>
+                           <Route path='/users' element={<UsersContainer />}/>
+                           
 
 
-                    </Routes>
-                </div>
+                       </Routes>
+                   </div>
+               </ThemeProvider>
             </div>
 
 

@@ -1,0 +1,15 @@
+.formControl {
+    display: block;
+    width: 400px;
+    fons-size: 14px;
+    background-color: white;
+    border-radius: 4px;
+
+
+}
+
+.error{
+    color: red;
+}
+
+

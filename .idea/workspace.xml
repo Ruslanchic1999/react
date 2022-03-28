@@ -5,14 +5,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="801e2640-1677-4133-b061-9e95d3b38bba" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/hoc/withAuthRedirect.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Dialogs/FormikDialogs.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Login/ChakraInput.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Login/FormikControl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Login/FormikControl.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Login/FormikLogin.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Login/FormikLoginContainer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Login/Input.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Login/TextError.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Login/Textarea.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/ProfileInfo.Status.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Dialogs/DialogsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/DialogsContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/HeaderContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/HeaderContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login/login.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPostsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPostsContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/ProfileInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/ProfileInfo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/Users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/Users.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hoc/withAuthRedirect.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hoc/withAuthRedirect.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/auth_reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/auth_reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/dialogs_reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/dialogs_reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/profile_reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/profile_reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/users_reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/users_reducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,22 +78,23 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Login" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
     <property name="ts.external.directory.path" value="C:\Program Files\WebStorm 2021.3.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\react-kabzda-kak-prosto\react\src\components\Login" />
+      <recent name="C:\react-kabzda-kak-prosto\react\src\components\Profile\MyPosts" />
       <recent name="C:\react-kabzda-kak-prosto\react\src\redux" />
       <recent name="C:\react-kabzda-kak-prosto\react\src\components\Header" />
       <recent name="C:\react-kabzda-kak-prosto\react\src\components\Profile" />
-      <recent name="C:\react-kabzda-kak-prosto\react\src\components\Users" />
-      <recent name="C:\react-kabzda-kak-prosto\react\react\src\redux" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\react-kabzda-kak-prosto\react\src\components\Preloader" />
@@ -145,7 +173,28 @@
       <workItem from="1647534999292" duration="325000" />
       <workItem from="1647536467543" duration="1813000" />
       <workItem from="1647576502122" duration="3673000" />
-      <workItem from="1647585241679" duration="1964000" />
+      <workItem from="1647585241679" duration="2018000" />
+      <workItem from="1647608227835" duration="595000" />
+      <workItem from="1647630680926" duration="4210000" />
+      <workItem from="1647652805171" duration="4589000" />
+      <workItem from="1647670401236" duration="378000" />
+      <workItem from="1647970859852" duration="2739000" />
+      <workItem from="1648008671477" duration="2645000" />
+      <workItem from="1648062739442" duration="897000" />
+      <workItem from="1648284052657" duration="870000" />
+      <workItem from="1648301843479" duration="9248000" />
+      <workItem from="1648313336508" duration="12373000" />
+      <workItem from="1648327634157" duration="837000" />
+      <workItem from="1648356285605" duration="1435000" />
+      <workItem from="1648360381727" duration="3299000" />
+      <workItem from="1648371081183" duration="3279000" />
+      <workItem from="1648380836299" duration="4423000" />
+      <workItem from="1648391680511" duration="4354000" />
+      <workItem from="1648403374446" duration="3884000" />
+      <workItem from="1648411613906" duration="2495000" />
+      <workItem from="1648414630916" duration="5000" />
+      <workItem from="1648438625983" duration="2519000" />
+      <workItem from="1648451205367" duration="5383000" />
     </task>
     <task id="LOCAL-00001" summary="git commit -m &quot;lesson 65&quot;">
       <created>1647374335098</created>
@@ -161,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647374574015</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="git commit -m &quot;lesson 70&quot;">
+      <created>1647587495286</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1647587495286</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,7 +238,8 @@
     <MESSAGE value="git commit -m &quot;lesson 55&quot;" />
     <MESSAGE value="git commit -m &quot;lesson 58&quot;" />
     <MESSAGE value="git commit -m &quot;lesson 65&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="git commit -m &quot;lesson 65&quot;" />
+    <MESSAGE value="git commit -m &quot;lesson 70&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="git commit -m &quot;lesson 70&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -199,6 +256,11 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/Header/HeaderContainer.jsx</url>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx</url>
+          <line>79</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

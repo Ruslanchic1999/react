@@ -2,35 +2,21 @@ import React from 'react';
 import s from './Dialogs.module.css';
 import DialogItem from "./DialogItem";
 import Messages from "./Messages";
-import {Navigate} from "react-router-dom";
-import {withAuthRedirect} from "../../hoc/withAuthRedirect";
-import {compose} from "redux";
-import {connect} from "react-redux";
-import {addPost, getUserProfile, updateNewPostText} from "../../redux/profile_reducer";
-
-
-
-
-
+import {Form, Formik} from 'formik';
+import * as Yup from 'yup'
+import FormikControl from "../Login/FormikControl";
+import  '../Login/FormikControl.css';
+import store from '../../redux/redux-store';
+import {sendMessage} from "../../redux/dialogs_reducer";
 
 
 const Dialogs = (props) => {
     let dialogsElements = props.dialogsPage.dialogs.map(d => < DialogItem name={d.name} key={d.key} id={d.id}/>);
     let messagesElements = props.dialogsPage.messages.map(m => < Messages message={m.message} key={m.key}/>);
-    let newMessageBody = props.dialogsPage.newMessageBody;
-
-
-    let onSendMessageClick = () => {
-        props.sendMessage();
-    }
-    let onNewMessageChange = (e) => {
-        let body = e.target.value
-        props.updateNewMessageBody(body)
-
-    }
-
-
-
+   let addNewMessage = (values) => {
+       debugger
+    props.sendMessage(values.newMessageBody)
+}
 
 
     return (
@@ -45,14 +31,7 @@ const Dialogs = (props) => {
                 </div>
                 <div className={s.messages}>
                     <div>{messagesElements}</div>
-                    <div>
-                        <div>
-                            <textarea onChange={onNewMessageChange} value={ newMessageBody } placeholder={'Enter your message'}></textarea>
-                        </div>
-                        <div>
-                            <button onClick={ onSendMessageClick }>Send</button>
-                        </div>
-                    </div>
+                   <FormikDialogs onSubmit = { addNewMessage } />
 
                 </div>
 
@@ -61,7 +40,46 @@ const Dialogs = (props) => {
     )
 }
 
+function FormikDialogs () {
+    const initialValues = {
+        newMessageBody: ''
+    }
+    const validationSchema = Yup.object({
 
-export default compose(
-    withAuthRedirect
-)(Dialogs)
+        newMessageBody: Yup.string().required('Required')
+
+    })
+    const onSubmit = (values) => {
+        store.dispatch(sendMessage(values.newMessageBody))
+    }
+
+    return (
+        <Formik initialValues={initialValues} validationSchema ={validationSchema} onSubmit = {onSubmit} >
+            {
+                formik =>{
+
+                    return(
+                        <Form className = 'formControl'>
+
+                            <FormikControl control = 'textarea'
+                                           label = 'Description'
+                                           name = 'newMessageBody'
+                                           placeholder = 'Enter your message'/>
+
+                            <button type = "submit" disabled={!formik.isValid} > Send Message </button>
+                        </Form>
+
+                    )}
+            }
+        </Formik>
+    );
+};
+
+
+
+export default Dialogs;
+
+
+
+
+

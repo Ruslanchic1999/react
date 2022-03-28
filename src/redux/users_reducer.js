@@ -119,10 +119,12 @@ export const unfollow = (userId) => {
 }
 
 export const follow = (userId) => {
+
     return (dispatch) => {
         dispatch (toggleInFollowingProcess(true, userId));
 
         usersAPI.follow(userId)
+
             .then(data => {
                 if (data.resultCode === 0) {
                     dispatch (followSuccess(userId));

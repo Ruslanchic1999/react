@@ -8,10 +8,10 @@ import {
 import {connect} from "react-redux";
 import Users from "./Users";
 import Preloader from "../Preloader/Preloader";
-import {Navigate} from "react-router-dom";
+
 import {withAuthRedirect} from "../../hoc/withAuthRedirect";
 import {compose} from "redux";
-import {addPost, getUserProfile, updateNewPostText} from "../../redux/profile_reducer";
+
 
 
 class UsersContainer extends React.Component {
