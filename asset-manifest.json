@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/demoVersion/static/css/main.bbc8bb0f.css",
+    "main.js": "/demoVersion/static/js/main.8ce66a8e.js",
+    "static/css/690.9e08d6eb.chunk.css": "/demoVersion/static/css/690.9e08d6eb.chunk.css",
+    "static/js/690.b6a24afb.chunk.js": "/demoVersion/static/js/690.b6a24afb.chunk.js",
+    "static/css/865.0ee83a46.chunk.css": "/demoVersion/static/css/865.0ee83a46.chunk.css",
+    "static/js/865.38bc379e.chunk.js": "/demoVersion/static/js/865.38bc379e.chunk.js",
+    "static/css/208.f1e2c98c.chunk.css": "/demoVersion/static/css/208.f1e2c98c.chunk.css",
+    "static/js/208.2f959d67.chunk.js": "/demoVersion/static/js/208.2f959d67.chunk.js",
+    "static/media/Iphone-spinner-2.gif": "/demoVersion/static/media/Iphone-spinner-2.d3fbaf2b81fd92c49692.gif",
+    "index.html": "/demoVersion/index.html",
+    "main.bbc8bb0f.css.map": "/demoVersion/static/css/main.bbc8bb0f.css.map",
+    "main.8ce66a8e.js.map": "/demoVersion/static/js/main.8ce66a8e.js.map",
+    "690.9e08d6eb.chunk.css.map": "/demoVersion/static/css/690.9e08d6eb.chunk.css.map",
+    "690.b6a24afb.chunk.js.map": "/demoVersion/static/js/690.b6a24afb.chunk.js.map",
+    "865.0ee83a46.chunk.css.map": "/demoVersion/static/css/865.0ee83a46.chunk.css.map",
+    "865.38bc379e.chunk.js.map": "/demoVersion/static/js/865.38bc379e.chunk.js.map",
+    "208.f1e2c98c.chunk.css.map": "/demoVersion/static/css/208.f1e2c98c.chunk.css.map",
+    "208.2f959d67.chunk.js.map": "/demoVersion/static/js/208.2f959d67.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bbc8bb0f.css",
+    "static/js/main.8ce66a8e.js"
+  ]
+}
